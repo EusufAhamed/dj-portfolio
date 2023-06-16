@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content=""/>
+    <meta name="description" content="Ronin HTML Template"/>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/ico/favicon-16x16.png" sizes="16x16"/>
+
+    <title>
+        {% block title %}
+        {% endblock %}
+    </title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+    <!-- Plugins -->
+    <link rel='stylesheet' href="{% static 'css/font-awesome.min.css' %}">
+    <link rel='stylesheet' href="{% static 'css/lightgallery.min.css' %}">
+    <link rel='stylesheet' href="{% static 'css/slick.css' %}">
+    <link rel='stylesheet' href="{% static 'css/zoom.css' %}">
+
+    <!-- Custom css file -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <!-- Wrapper -->
+    <div class="wrapper">
+        {% include 'layouts/partials/_header.html' %}
+
+        {% block content %}
+        {% endblock %}
+
+        {% include 'layouts/partials/_footer.html' %}
+    </div>
+    <!-- /Wrapper -->
+
+    <!-- JS -->
+    <!-- jquery-2.1.3.min js -->
+    <script type="text/javascript" src="{% static 'js/jquery-2.1.3.min.js' %}"></script>
+
+    <!-- Plugins -->
+    <script type="text/javascript" src="{% static 'js/libs.js' %}"></script>
+
+    <!-- Main js -->
+    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

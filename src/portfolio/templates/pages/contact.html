@@ -1,0 +1,83 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block title %}
+{{ page_title | title }}
+{% endblock %}
+
+{% block content %}
+<!-- Container -->
+<main class="container">
+    <!-- Header -->
+    <div class="heading">
+      <h2 class="head-text">
+        <span>Contact</span>
+        <span>The soul never thinks without an image.</span>
+      </h2>
+      <ul class="breadcrumb page-transition">
+        <li>
+          <a href="index.html">home</a>
+        </li>
+        <li class="current-crumb">
+          <a href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /Header -->
+    <!-- Contact -->
+    <div class="contact">
+      <div class="line"></div>
+      <div class="row">
+        <div class="content-box">
+          <div class="contact-info col-sm-12 col-md-6">
+            <h2>info contact</h2>
+            <p>Duis ut ullamcorper ipsum. Etiam porttitor.</p>
+            <div class="contact-details">
+              <div class="col-md-12">
+                <i class="fa fa-map-marker" aria-hidden="true"></i> 57 Mainstreet, MainTower, Barcelona
+              </div>
+              <div class="col-md-12">
+                <i class="fa fa-volume-control-phone" aria-hidden="true"></i> +99(004) 987-654-3210
+              </div>
+              <div class="col-md-12">
+                <i class="fa fa-envelope" aria-hidden="true"></i> contact@ronin.com
+              </div>
+            </div>
+          </div>
+          <div class="contact-form col-sm-12 col-md-6">
+            <h2>keep in touch</h2>
+            <p>Nunc nec iaculis ipsum, a egestas ante.</p>
+            <form id="validForm">
+              <div class="form-group control-group col-sm-12 col-md-6">
+                <span>
+                  <i class="fa fa-user"></i>
+                </span>
+                <input class="form-control" type="text" name="name" minlength="2" placeholder="Name *" autocomplete="off">
+              </div>
+              <div class="form-group control-group col-sm-12 col-md-6">
+                <span>
+                  <i class="fa fa-envelope-o"></i>
+                </span>
+                <input class="form-control" type="email" name="email" placeholder="Email Address *" autocomplete="off">
+              </div>
+              <div class="form-group control-group col-sm-12">
+                <span>
+                  <i class="fa fa-pencil"></i>
+                </span>
+                <textarea class="form-control" name="message" placeholder="Message *"></textarea>
+              </div>
+              <div class="form-button col-xs-12">
+                <button type="submit" name="enter" class="button">
+                  <i class="fa fa-paper-plane"></i>
+                  <span>send message</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Contact -->
+</main>
+<!-- /Container -->
+{% endblock %}

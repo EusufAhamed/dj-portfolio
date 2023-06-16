@@ -1,0 +1,186 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block title %}
+{{ page_title | title }}
+{% endblock %}
+
+{% block content %}
+<!-- Container -->
+<main class="container">
+  <!-- Heading -->
+  <div class="heading">
+    <h2 class="head-text">
+      <span>about me</span>
+      <span>Simplicity, wit, and good typography.</span>
+    </h2>
+    <ul class="breadcrumb page-transition">
+      <li>
+        <a href="index.html">Home</a>
+      </li>
+      <li>
+        <a href="about-us.html">about</a>
+      </li>
+      <li class="current-crumb">
+        <a href="about-me.html">about me</a>
+      </li>
+    </ul>
+  </div>
+  <!-- /Heading -->
+  <!-- About Me-->
+  <div class="about-me">
+    <div class="line"></div>
+    <div class="row">
+      <div class="content-box">
+        <div class="team-photo col-md-4 col-sm-12">
+          <img src="{% static 'images/team/team_1.jpg' %}" alt="image description">
+        </div>
+        <div class="team-info col-md-8 col-sm-12">
+          <h2>Eusuf Ahamed</h2>
+          <span>software engineer</span>
+          <p>Enthusiastically redefine vertical users vis-a-vis highly efficient mindshare. Efficiently e-enable enabled e-commerce and market positioning potentialities. Seamlessly mesh empowered bandwidth whereas extensive relationships. Dynamically synergize wireless methodologies via worldwide resources. Progressively enhance visionary total linkage via end-to-end e-services. Interactively maximize inexpensive methodologies and interoperable technologies. Monotonectally aggregate extensive partnerships through equity invested catalysts for change. Synergistically fabricate extensible paradigms for high-quality paradigms. Conveniently foster B2B functionalities and innovative supply chains. Enthusiastically repurpose dynamic opportunities via stand-alone results.</p>
+          <ul class="share">
+            <li>
+              <a href="#">
+                <i class="fa fa-facebook" style="color: #3b5998;"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-twitter" style="color: #55acee;"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-dribbble" style="color: #ea4c89;"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-behance" style="color: #1769FF;"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-pinterest" style="color: #bd081c;"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /About Me-->
+
+  <!-- About Us-->
+  <div class="about">
+    <div class="row">
+        <!-- Team Info -->
+        <div class="content-box">
+            <div class="col-md-12">
+                <article class="about-facts col-xs-12 col-md-6">
+                    <h2>Some fact's about me</h2>
+                    <p>Style never met and those among great. At no or september sportsmen he perfectly happiness attending. Depending listening delivered off new she procuring satisfied sex existence. Person plenty answer to exeter it if. Law use assistance especially resolution cultivated did out sentiments unsatiable. Way necessary had intention happiness but september delighted his curiosity. Furniture furnished or on strangers neglected remainder engrossed. </p>
+                </article>
+                <div class="about-skills col-xs-12 col-md-6">
+                    <h2>Skills</h2>
+                    <div class="skills">
+                        <div class="skill">
+                            <p class="skill-title">Web Development</p>
+                            <div class="skill-bar" data-bar="90"><span></span></div>
+                        </div>
+                        <div class="skill">
+                            <p class="skill-title">Consulting</p>
+                            <div class="skill-bar" data-bar="70"><span></span></div>
+                        </div>
+                        <div class="skill">
+                            <p class="skill-title">Branding</p>
+                            <div class="skill-bar" data-bar="60"><span></span></div>
+                        </div>
+                        <div class="skill">
+                            <p class="skill-title">Graphic Design</p>
+                            <div class="skill-bar" data-bar="80"><span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+        <!-- /Team Info -->
+        <!-- Services -->
+            <div class="content-box">
+                <article class="col-md-12">
+                    <h2>what i offer</h2>
+                    <p>He my polite be object oh change. Consider no mr am overcame yourself throwing sociable children. Hastily her totally conduct may. My solid by stuff first smile fanny. Humoured how advanced mrs elegance sir who. Home sons when them dine do want to. Estimating themselves unsatiable imprudence an he at an. Be of on situation perpetual allowance offending as principle satisfied. Improved carriage securing are desirous too.</p>
+                </article>
+                <div class="service-item col-md-4 col-xs-12 col-sm-6">
+                    <h3><i class="fa fa-desktop"></i>Web Design</h3>
+                    <p>Sportsman do allowance is september shameless am sincerity oh recommend. Gate tell man day that who.</p>
+                </div>
+                <div class="service-item col-md-4 col-xs-12 col-sm-6">
+                    <h3><i class="fa fa-cogs"></i>Development</h3>
+                    <p>Doubtful offended do entrance of landlord moreover is mistress in. Nay was appear entire ladies.</p>
+                </div>
+                <div class="service-item col-md-4 col-xs-12 col-sm-6">
+                    <h3><i class="fa fa-pencil-square-o"></i>Graphic Design</h3>
+                    <p>An seems green be wrote again. She add what own only like. Tolerably we as extremity exquisite do commanded.</p>
+                </div>
+                <div class="service-item col-md-4 col-xs-12 col-sm-6">
+                    <h3><i class="fa fa-line-chart"></i>Marketing Strategy</h3>
+                    <p>Wished be do mutual except in effect answer. Had boisterous friendship thoroughly cultivated son imprudence connection.</p>
+                </div>
+                <div class="service-item col-md-4 col-xs-12 col-sm-6">
+                    <h3><i class="fa fa-list-alt"></i>Content Creation</h3>
+                    <p>Debating me breeding be answered an he. Spoil event was words her off cause any. Tears woman which no is world miles woody.</p>
+                </div>
+                <div class="service-item col-md-4 col-xs-12 col-sm-6">
+                    <h3><i class="fa fa-hand-pointer-o"></i>Interactive</h3>
+                    <p>Carriage quitting securing be appetite it declared. High eyes kept so busy feel call in. Would day nor ask walls known.</p>
+                </div>
+            </div>
+        <!-- /Services -->
+        <!-- Clients -->
+            <div class="content-box">
+                <article class="col-xs-12 col-md-12">
+                    <h2>Clients who love me</h2>
+                    <p>To they four in love. Settling you has separate supplied bed. Concluded resembled suspected his resources curiosity joy. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+                </article>
+                <ul class="clients col-xs-12 col-md-12">
+                    <li class="client col-md-2 col-xs-4">
+                    <span>
+                        <img src="assets/images/clients/client-1.png" alt="image description">
+                    </span>
+                    </li>
+                    <li class="client col-md-2 col-xs-4">
+                    <span>
+                        <img src="assets/images/clients/client-2.png" alt="image description">
+                    </span>
+                    </li>
+                    <li class="client col-md-2 col-xs-4">
+                    <span>
+                        <img src="assets/images/clients/client-3.png" alt="image description">
+                    </span>
+                    </li>
+                    <li class="client col-md-2 col-xs-4">
+                    <span>
+                        <img src="assets/images/clients/client-4.png" alt="image description">
+                    </span>
+                    </li>
+                    <li class="client col-md-2 col-xs-4">
+                    <span>
+                        <img src="assets/images/clients/client-5.png" alt="image description">
+                    </span>
+                    </li>
+                    <li class="client col-md-2 col-xs-4">
+                    <span>
+                        <img src="assets/images/clients/client-6.png" alt="image description">
+                    </span>
+                    </li>
+                </ul>
+            </div>
+        <!-- Clients -->
+    </div>
+</div>
+<!-- /About Us-->
+</main>
+<!-- /Container -->
+{% endblock %}

@@ -1,0 +1,145 @@
+{% extends 'layouts/base.html' %}
+{% load static %}
+
+{% block title %}
+{{ page_title | title }}
+{% endblock %}
+
+{% block content %}
+<!-- Container -->
+<main class="container">
+    <!-- Header -->
+    <div class="heading">
+      <h2 class="head-text">
+        <span>work's</span>
+        <span>Design is a solution to a problem.</span>
+      </h2>
+      <ul class="breadcrumb page-transition">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li class="current-crumb">
+          <a href="#">works col. 2</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /Header -->
+    <!--Works-->
+    <div class="works">
+      <div class="line"></div>
+      <div class="works-content page-transition">
+        <div id="filters">
+          <button class="btn-filter current" data-filter="*">show all</button>
+          <button class="btn-filter" data-filter=".design">design</button>
+          <button class="btn-filter" data-filter=".branding">branding</button>
+          <button class="btn-filter" data-filter=".art">art</button>
+        </div>
+        <ul class="grid">
+          <li class="grid-item col-md-6 col-sm-6 col-xs-12 branding">
+            <a href="{% url 'project:details' %}">
+              <img src="{% static 'images/works/thumb/w-1.jpg' %}" alt="img-desc">
+              <div class="grid-overlay">
+                <div class="work-text">
+                  <span class="work-cat">branding</span>
+                  <div class="work-name">
+                    <h3>The Grey Magic</h3>
+                    <span class="triangle">
+                      <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item col-md-6 col-sm-6 col-xs-12 design">
+            <a href="project-video.html">
+              <img src="{% static 'images/works/thumb/w-2.jpg' %}" alt="img-desc">
+              <div class="grid-overlay">
+                <div class="work-text">
+                  <span class="work-cat">design</span>
+                  <div class="work-name">
+                    <h3>Eyes of Stones</h3>
+                    <span class="triangle">
+                      <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item col-md-6 col-sm-6 col-xs-12 art">
+            <a href="project-video.html">
+              <img src="{% static 'images/works/thumb/w-3.jpg' %}" alt="img-desc">
+              <div class="grid-overlay">
+                <div class="work-text">
+                  <span class="work-cat">art</span>
+                  <div class="work-name">
+                    <h3>Spirit in the Secret</h3 <span class="triangle">
+                    <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item col-md-6 col-sm-6 col-xs-12 branding">
+            <a href="project-video.html">
+              <img src="{% static 'images/works/thumb/w-4.jpg' %}" alt="img-desc">
+              <div class="grid-overlay">
+                <div class="work-text">
+                  <span class="work-cat">branding</span>
+                  <div class="work-name">
+                    <h3>No Time</h3>
+                    <span class="triangle">
+                      <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item col-md-6 col-sm-6 col-xs-12 design">
+            <a href="project-video.html">
+              <img src="{% static 'images/works/thumb/w-5.jpg' %}" alt="img-desc">
+              <div class="grid-overlay">
+                <div class="work-text">
+                  <span class="work-cat">design</span>
+                  <div class="work-name">
+                    <h3>Moons of Window</h3>
+                    <span class="triangle">
+                      <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+          <li class="grid-item col-md-6 col-sm-6 col-xs-12 art">
+            <a href="project-video.html">
+              <img src="{% static 'images/works/thumb/w-6.jpg' %}" alt="img-desc">
+              <div class="grid-overlay">
+                <div class="work-text">
+                  <span class="work-cat">art</span>
+                  <div class="work-name">
+                    <h3>The Rings's Shores</h3>
+                    <span class="triangle">
+                      <i class="fa fa-angle-right fa-2x" aria-hidden="true"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="more">
+          <a href="#" class="button">
+            <i class="fa fa-plus"></i>
+            <span>Load More</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!--/Works-->
+</main>
+<!-- /Container -->
+{% endblock %}
